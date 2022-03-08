@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href= "images/icon.png">
+    <title>Inicio | Maicorz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+          <div class="image-text">
+            <span class="image">
+              <img src="images/NoNeim.png" alt="" title="NoNeim">
+            </span>
+            <div class="text logo-text">
+              <span class="name">Maicorz</span>
+              <span class="profession"></span>
+            </div>
+          </div>
+          <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+          <div class="menu">
+              <li class="search-box"></li>
+                <ul class="menu-links">
+                    <li class="nav-link" title="COMIPEMS">
+                        <a href="comipems.html" target="Blank">
+                            <i class="fa-solid fa-newspaper icon"></i>
+                            <span class="text nav-text">COMIPEMS</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" title="Escuelas">
+                        <a href="Escuelas.html" target="_Blank">
+                            <i class="fa-solid fa-school icon"></i>
+                            <span class="text nav-text">Escuelas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" title="Registrase">
+                        <a href="Cuenta.html">
+                            <i class="fa-solid fa-user-large icon"></i>
+                            <span class="text nav-text">Registrase</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" title="Iniciar Sesión">
+                        <a href="Cuenta.html">
+                            <i class="fa-solid fa-user-tie icon"></i>
+                            <span class="text nav-text">Iniciar Sesión</span>
+                        </a>
+                    </li>
+              </ul>
+          </div>
+          <div class="bottom-content">
+            <li class="mode">
+              <div class="sun-moon">
+                  <i class='bx bx-moon icon moon'></i>
+                  <i class='bx bx-sun icon sun'></i>
+              </div>
+              <span class="mode-text text">Modo Noche</span>
+              <div class="toggle-switch">
+                  <span class="switch"></span>
+              </div>
+            </li>
+          </div>
+        </div>
+    </nav>
+    <script>
+    const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+    })
+    searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+    })
+    modeSwitch.addEventListener("click" , () =>{
+        body.classList.toggle("dark");
+        
+        if(body.classList.contains("dark")){
+            modeText.innerText = "Modo Día";
+        }else{
+            modeText.innerText = "Modo Noche";
+            
+        }
+    });
+    </script>
+    <section class="home">
+        <div class="text1">Inicio </div>
+        <article class="article-right">
+            <p class="title-text">Maicorz</p>
+            <br>
+            De acuerdo a la Comisión Metropolitana de Instituciones Públicas de Educación Media Superior (COMIPEMS) solo el 28% de los alumnos que presentan el examen se queda en su primera opción y el 70% se queda en sus primeras opciones.
+            <br>
+            El examen COMIPEMS es anual, que tiene como objetivo la asignación de lugares para alumnos que buscan estudiar el nivel medio superior, pero realmente la mayoría de los alumnos de secundaria que van a presentar este examen no saben que estudiar o en donde estudiar, por lo tanto, hay una desorientación sobre las instituciones, así como sus planes de estudio y tipos de escolaridad.
+            <br>
+            NoNeim apuesta por una página web (Maicorz) que se le pueda dar uso en escuelas de nivel secundaria para que los alumnos obtengan información del proceso COMIPEMS (convocatorias, registro, tipos de bachilleratos, etc.)  además actividades para apoyar a los alumnos su preparación para el examen.
+            <br>
+            Maicorz únicamente se enfocará en el curso para ingreso a nivel medio superior, aparte de brindar información sobre las carreras, las instituciones y los planes de estudios en las escuelas del IPN (CECyT del 1 al 15 y CET).
+        </article>
+        <img class="image-left-2" src="images/UnDraw/exam.svg" alt="Instituto Politécnico Nacional" title="IPN">
+        <hr>
+        <article clas="home">
+            <div class="article-right" id="inicio">
+            <p class="title-text">Instituto Politécnico Nacional</p>
+            <p>
+                El IPN fue fundado en 1936.
+                <br>
+                Su lema <b>"La técnica al servicio de la Patria"</b>, reflejan su misión y visión. Se busca que el conocimiento y formación que se brinda contribuya al desarrollo científico, tecnológico y de innovación dentro del país.
+                <br>
+                Se ofrecen bachilleratos tecnológicos con duración de 6 semestres.
+                <br><br>
+                Bajo 2 tipos de modalidades:
+                <br>
+                <ul>
+                <br>
+                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Centro de Estudios Científicos y Tecnológicos (CECyT).</li>
+                <br>
+                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Centro de Estudios Tecnológicos (CET).</li>
+                </ul>
+                <br>
+                La ventaja de este tipo de bachilleratos es que es bivalente y al finalizar obtienes un certificado o título técnico junto con una cédula profesional válidos por la SEP; lo cual permite integrarte al campo laboral.
+            </p>
+            </div>
+            <img class="image-left" src="images/ipn.png" alt="Instituto Politécnico Nacional" title="IPN">
+            <hr>
+            <div class="article">
+            <div class="titulo-animacion">
+                <p>Estudiar en el </p>
+                <ul>
+                <li>CECyT No. 1</li>
+                <li>CECyT No. 2</li>
+                <li>CECyT No. 3</li>
+                <li>CECyT No. 4</li>
+                <li>CECyT No. 5</li>
+                <li>CECyT No. 6</li>
+                <li>CECyT No. 7</li>
+                <li>CECyT No. 8</li>
+                <li>CECyT No. 9</li>
+                <li>CECyT No. 10</li>
+                <li>CECyT No. 11</li>
+                <li>CECyT No. 12</li>
+                <li>CECyT No. 13</li>
+                <li>CECyT No. 14</li>
+                <li>CECyT No. 15</li>
+                <li>CET</li>
+                </ul>
+            </div>
+            <div class="margen-top-titulo">
+                <div class="article">
+                    Considera estudiar en una prepa IPN si: 
+                <br><br>
+                <ul>
+                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Quieres prepararte para que al salir puedas integrarte a un trabajo como técnico.</li><br>
+                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tienes el interés de estudiar una ingeniería dentro del IPN. Si estudias en algún CECyT tendrás casi el pase directo.</li><br>
+                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Te llama la atención las áreas de robótica, tecnologías de la información y de las ciencias exactas. El IPN es una institución educativa que se destaca en estas áreas.</li><br>
+                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Deseas impulsar tus habilidades de pensamiento analítico así como tus destrezas para la resolución de problemas.</li><br>
+                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Te interesa llevar más clases prácticas y laboratorios que materias teóricas.</li><br>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

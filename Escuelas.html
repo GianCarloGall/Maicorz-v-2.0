@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href= "images/icon.png">
+    <title>Escuelas | Maicorz</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="images/NoNeim.png" alt="" title="NoNeim">
+        </span>
+        <div class="text logo-text">
+          <span class="name">Maicorz</span>
+          <span class="profession">
+          </span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+          <li class="search-box"></li>
+          <ul class="menu-links">
+            <li class="nav-link" title="COMIPEMS">
+              <a href="comipems.html">
+                <i class="fa-solid fa-newspaper icon"></i>
+                <span class="text nav-text">COMIPEMS</span>
+              </a>
+            </li>
+            <li class="nav-link" title="Carreras">
+                <a href="carreras.html">
+                    <i class="fa-solid fa-briefcase icon"></i>
+                    <span class="text nav-text">Carreras</span>
+                </a>
+            </li>
+          </ul>
+      </div>
+      <div class="bottom-content">
+        <li class="mode">
+          <div class="sun-moon">
+              <i class='bx bx-moon icon moon'></i>
+              <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Modo Noche</span>
+          <div class="toggle-switch">
+              <span class="switch"></span>
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+  <script>
+    const body = document.querySelector('body'),
+  sidebar = body.querySelector('nav'),
+  toggle = body.querySelector(".toggle"),
+  searchBtn = body.querySelector(".search-box"),
+  modeSwitch = body.querySelector(".toggle-switch"),
+  modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+    })
+    searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+    })
+    modeSwitch.addEventListener("click" , () =>{
+        body.classList.toggle("dark");
+        
+        if(body.classList.contains("dark")){
+            modeText.innerText = "Modo Día";
+        }else{
+            modeText.innerText = "Modo Noche";
+            
+        }
+    });
+  </script>
+  <section class="home">
+    <div class="text1">Escuelas</div>
+    <div class="swiper mySwiper container" id="container-background">
+      <div class="swiper-wrapper content">
+<!-- CECyT 1-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt1.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/cecyt1.ipn.mx" target="Blank" title="Facebook del CECyT 1"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt1.ipn.mx" target="Blank" title="Página del CECyT 1"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 1</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Gonzalo Vázquez Vela <br> Aciertos 88</p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 1">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 2-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img id="cecyt2" src="images/cecyts/cecyt2.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/miguelbernardcecyt2" target="Blank" title="Facebook del CECyT 2"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt2.ipn.mx" target="Blank" title="Página del CECyT 2"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 2</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Miguel Bernard <br> Aciertos 89</p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 2">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 3-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt3.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/cecyt3err" target="Blank" title="Facebook del CECyT 3"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt3.ipn.mx" target="Blank" title="Página del CECyT 3"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 3</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Estanislao Ramírez Ruiz <br> Aciertos 94 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 3">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 4-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt4.jpg" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/CECyTNo4Oficial" target="Blank" title="Facebook del CECyT 4"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt4.ipn.mx" target="Blank" title="Página del CECyT 4"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 4</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Lázaro Cárdenas <br> Aciertos 86 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 4">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 5-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt5.jpg" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/CECyT5Oficial" target="Blank" title="Facebook del CECyT 5"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt5.ipn.mx" target="Blank" title="Página del CECyT 5"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 5</span>
+              <span class="profession">Ciencias Sociales y Administrativas</span>
+            </div>
+            <div class="rating">
+                <p>Benito Juárez <br> Aciertos 91 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 5">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 6-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt6.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/CECyT-6-Miguel-Othón-de-Mendizábal-107340444077339" target="Blank" title="Facebook del CECyT 6"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt6.ipn.mx" target="Blank" title="Página del CECyT 6"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 6</span>
+              <span class="profession">Ciencias Médico Biológicas</span>
+            </div>
+            <div class="rating">
+                <p>Miguel Othón de Mendizábal <br> Aciertos 93 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 6">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 7-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt7.jpg" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/CECyT7oficial" target="Blank" title="Facebook del CECyT 7"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt7.ipn.mx" target="Blank" title="Página del CECyT 7"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 7</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Cuauhtémoc <br> Aciertos 91 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 7">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 8-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt8.jpg" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/cecytocho" target="Blank" title="Facebook del CECyT 8"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt8.ipn.mx" target="Blank" title="Página del CECyT 8"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 8</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Narciso Bassols <br> Aciertos 86 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 8">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 9-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt9.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/Juan-de-Dios-Bátiz-Oficial-813458352356480" target="Blank" title="Facebook del CECyT 9"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt9.ipn.mx" target="Blank" title="Página del CECyT 9"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 9</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Juan de Dios Bátiz <br> Aciertos 105 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 9">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 10-->
+        <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="images/cecyts/cecyt10.png" alt="">
+              </div>
+              <div class="media-icons">
+                <a href="https://www.facebook.com/cecyt10.ipn.mx" target="Blank" title="Facebook del CECyT 10"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.cecyt10.ipn.mx" target="Blank" title="Página del CECyT 10"><i class="fa-solid fa-graduation-cap"></i></a>
+              </div>
+              <div class="name-profession">
+                <span class="name">CECyT 10</span>
+                <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+              </div>
+              <div class="rating">
+                <p>Carlos Vallejo Márquez <br> Aciertos 85 </p>
+              </div>
+              <div class="button">
+                <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 10">Conocer más...</a></button>
+              </div>
+            </div>
+        </div>
+<!-- CECyT 11-->
+          <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt11.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/CECYT11WMOFICIAL" target="Blank" title="Facebook del CECyT 11"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt11.ipn.mx" target="Blank" title="Página del CECyT 11"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 11</span>
+              <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+            </div>
+            <div class="rating">
+                <p>Wilfrido Massieu <br> Aciertos 85 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 11">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>    
+<!-- CECyT 12-->
+        <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="images/cecyts/cecyt12.png" alt="">
+              </div>
+              <div class="media-icons">
+                <a href="https://www.facebook.com/cecyt12oficial" target="Blank" title="Facebook del CECyT 12"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.cecyt12.ipn.mx" target="Blank" title="Página del CECyT 12"><i class="fa-solid fa-graduation-cap"></i></a>
+              </div>
+              <div class="name-profession">
+                <span class="name">CECyT 12</span>
+                <span class="profession">Ciencias Sociales y Administrativas</span>
+              </div>
+              <div class="rating">
+                <p>José María Morelos <br> Aciertos 86</p>
+              </div>
+              <div class="button">
+                <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 12">Conocer más...</a></button>
+              </div>
+            </div>
+        </div>
+<!-- CECyT 13-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt13.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/ipncecyt13" target="Blank" title="Facebook del CECyT 13"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt13.ipn.mx" target="Blank" title="Página del CECyT 13"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 13</span>
+              <span class="profession">Ciencias Sociales y Administrativas</span>
+            </div>
+            <div class="rating">
+              <p>Ricardo Flores Magón <br> Aciertos 93 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 13">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 14-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt14.png" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/cecyt14oficial" target="Blank" title="Facebook del CECyT 14"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt14.ipn.mx" target="Blank" title="Página del CECyT 14"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 14</span>
+              <span class="profession">Ciencias Sociales y Administrativas</span>
+            </div>
+            <div class="rating">
+              <p>Luis Enrique Erro <br> Aciertos 87 </p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 14">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CECyT 15-->
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="images/cecyts/cecyt15.jpg" alt="">
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/CECyT-15-Diódoro-Antúnez-Echegaray-Oficial-108882773905000" target="Blank" title="Facebook del CECyT 15"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.cecyt14.ipn.mx" target="Blank" title="Página del CECyT 15"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+            <div class="name-profession">
+              <span class="name">CECyT 15</span>
+              <span class="profession">Ciencias Médico Biológicas</span>
+            </div>
+            <div class="rating">
+              <p>Diódoro Antúnez Echegaray <br> Aciertos 90</p>
+            </div>
+            <div class="button">
+              <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cecyt 15">Conocer más...</a></button>
+            </div>
+          </div>
+        </div>
+<!-- CET-->
+        <div class="swiper-slide card">
+        <div class="card-content">
+          <div class="image">
+            <img src="images/cecyts/cet.jfif" alt="">
+          </div>
+          <div class="media-icons">
+            <a href="https://www.facebook.com/gestionescolarcet1" target="Blank" title="Facebook del CET 1"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.cet1.ipn.mx" target="Blank" title="Página del CET 1"><i class="fa-solid fa-graduation-cap"></i></a>
+          </div>
+          <div class="name-profession">
+            <span class="name">CET 1</span>
+            <span class="profession">Ingeniería y Ciencias Físico Matemáticas</span>
+          </div>
+          <div class="rating">
+              <p>Walter Cross Buchanan <br> Aciertos 85 </p>
+          </div>
+          <div class="button">
+            <button class="aboutMe"><a class="without-design" href="Cecyts.html#Cet">Conocer más...</a></button>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+  <article class="home" id="margen-top-article">
+    <div class="article">
+      <hr id="hr">
+      <p class="title-text" id="tronco">Tronco Común</p>
+      <p class="justificado">
+          <p class="title-text">Área<br>Ingeniería y Ciencias Físico Matemáticas</p>
+          Basa su estudio en las ciencias exactas tales como la física, las matemáticas y la química que en conjunto con otras ramas del saber forman a un profesional con competencias integrales. Si te interesas por el desarrollo, manejo e implementación de la tecnología este es una elección ideal para ti.
+          <br><br>
+          Las materias que se imparten en esta área son:
+          <br>
+          <div class="lista">
+              <p class="subtitle">Primer Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Álgebra</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Filosofía I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Computación Básica I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Expresión Oral Y Escrita I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo De Habilidades Del Pensamiento</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Personal</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional I</li>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Segundo Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Geometría Y Trigonometría</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Filosofía II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Computación Básica I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Expresión Oral Y Escrita II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Biología Básica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional II</li>
+                  <br>
+                  <a href="#optativa" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                  <br><br>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Y Liderazgo</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Apreciación Artística</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas De Investigación De Campo</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Tecer Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Geometría Analítica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés III</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Científica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Dibujo Técnico I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Entorno Socioeconómico De México</li>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Cuarto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo Diferencial</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés IV</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Dibujo Técnico II</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Quinto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo Integral</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física III</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química III</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés V</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional III</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Sexto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Probabilidad Y Estadística</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física IV</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química IV</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés VI</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional IV</li>
+              </ul>
+          </div>
+          <img class="lista__imagen" src="images/unDraw/mate.svg" alt="Error al Cargar" title="Ingeniería y Ciencias Físico Matemáticas">
+      </p>
+      <hr id="hr">
+      <p class="justificado">
+          <p class="title-text">Área<br>Ciencias Médico Biológicas</p>
+          Basa su estudio en ciencias tales como la Biología, Medicina y Química que en conjunto con otras ramas del saber forman a un profesional con competencias integrales. Sí te interesas por el servicio comunitario y el desarrollo de tecnologías en las áreas de la medicina este es una elección ideal para tí.
+          <br><br>
+          Las materias que se imparten en esta área son:
+          <br>
+          <div class="lista">
+              <p class="subtitle">Primer Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Álgebra</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Filosofía I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Computación Básica I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Expresión Oral Y Escrita I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo De Habilidades Del Pensamiento</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Personal</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional I</li>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Segundo Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Geometría Y Trigonometría</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Filosofía II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Computación Básica I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Expresión Oral Y Escrita II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Biología Básica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional II</li>
+                  <br>
+                  <a href="#optativa" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                  <br><br>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Y Liderazgo</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Apreciación Artística</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas De Investigación De Campo</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Tecer Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Geometría Analítica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés III</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Biología Celular</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Entorno Socioeconómico De México</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Dibujo Técnico</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Etimologías Griegas</li>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Cuarto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo Diferencial</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés IV</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Biología Humana</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Dibujo Biológico</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Quinto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo Integral</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física III</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química III</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés V</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Continuidad Biológica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional III</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Sexto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Probabilidad Y Estadística</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química IV</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés VI</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional IV</li>
+              </ul>
+          </div>
+          <img class="lista__imagen" src="images/unDraw/laboratorio.svg" alt="Error al Cargar" title="Ciencias Médico Biológicas">
+      </p>
+      <hr id="hr">
+      <p class="justificado">
+          <p class="title-text">Área<br>Ciencias Sociales y Administrativas</p>
+          Basa su estudio en ciencias sociales tales como la Psicología, Historia y Sociología que en conjunto con otras ramas del saber forman a un profesional con competencias integrales. Sí te interesas por el estudio de los fenómenos sociales, lenguas extranjeras, así como la comunicación oral y escrita este es una elección ideal para tí.
+          <br><br>
+          Las materias que se imparten en esta área son:
+          <br>
+          <div class="lista">
+              <p class="subtitle">Primer Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Álgebra</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Filosofía I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Computación Básica I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Expresión Oral Y Escrita I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo De Habilidades Del Pensamiento</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Personal</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional I</li>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Segundo Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Geometría Y Trigonometría</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Filosofía II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Computación Básica I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Expresión Oral Y Escrita II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Biología Básica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional II</li>
+                  <br>
+                  <a href="#optativa" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                  <br><br>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Y Liderazgo</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Apreciación Artística</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas De Investigación De Campo</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Tecer Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Geometría Analítica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés III</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Científica</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Contabilidad I</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Entorno Socioeconómico De México</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculos Financieros I</li>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Cuarto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo Diferencial</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Física II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés IV</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Derecho</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Contabilidad II</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculos Financieros II</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Quinto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo Integral</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Microeconomía</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés V</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Derecho Mercantil</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional III</li>
+              </ul>
+          </div>
+          <div class="lista">
+              <p class="subtitle">Sexto Semestre</p>
+              <ul>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Probabilidad Y Estadística</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Macroeconomía</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés VI</li>
+                  <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional IV</li>
+              </ul>
+          </div>
+          <img class="lista__imagen" src="images/unDraw/admin.svg" alt="Error al Cargar" title="Ciencias Sociales y Administrativas">
+      </p>
+    </div>
+  </article>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

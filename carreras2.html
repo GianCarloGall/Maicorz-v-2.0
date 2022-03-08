@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href= "images/icon.png">
+    <title>Carreras | Maicorz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+          <div class="image-text">
+            <span class="image">
+              <img src="images/NoNeim.png" alt="" title="NoNeim">
+            </span>
+            <div class="text logo-text">
+              <span class="name">Maicorz</span>
+              <span class="profession"></span>
+            </div>
+          </div>
+          <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+          <div class="menu">
+              <li class="search-box"></li>
+                <ul class="menu-links">
+                    <li class="nav-link" title="COMIPEMS">
+                      <a href="comipems.html">
+                        <i class="fa-solid fa-newspaper icon"></i>
+                        <span class="text nav-text">COMIPEMS</span>
+                      </a>
+                    </li>
+                    <li class="nav-link" title="Escuelas">
+                        <a href="Escuelas.html">
+                            <i class="fa-solid fa-school icon"></i>
+                            <span class="text nav-text">Escuelas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" title="CECyTs y CET">
+                        <a href="Cecyts.html">
+                            <i class="fa-solid fa-chalkboard-user icon"></i>
+                            <span class="text nav-text">CECyTs y CET</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" title="Anterior Página">
+                        <a href="carreras.html">
+                            <i class="fa-solid fa-chevron-left icon"></i>
+                            <span class="text nav-text">Anterior Página</span>
+                        </a>
+                    </li>
+              </ul>
+          </div>
+          <div class="bottom-content">
+            <li class="mode">
+              <div class="sun-moon">
+                  <i class='bx bx-moon icon moon'></i>
+                  <i class='bx bx-sun icon sun'></i>
+              </div>
+              <span class="mode-text text">Modo Noche</span>
+              <div class="toggle-switch">
+                  <span class="switch"></span>
+              </div>
+            </li>
+          </div>
+        </div>
+    </nav>
+    <script>
+    const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+    })
+    searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+    })
+    modeSwitch.addEventListener("click" , () =>{
+        body.classList.toggle("dark");
+        
+        if(body.classList.contains("dark")){
+            modeText.innerText = "Modo Día";
+        }else{
+            modeText.innerText = "Modo Noche";
+            
+        }
+    });
+    </script>
+    <section class="home">
+        <div class="text1 " id="sd">Carreras</div>
+        <div class="article">
+            <p class="title-text">Técnico en Sistemas Digitales</p>
+            <p class="justificado">
+                La carrera de Técnico en Sistemas digitales tiene como propósito: manejar en forma integral equipo electrónico digital, para satisfacer a los diferentes sectores de la actividad productiva, con un enfoque de calidad.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 1">
+                        <img src="images/cecyts/cecyt1.png" title="CECyT No.1" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 3">
+                        <img src="images/cecyts/cecyt3.png" title="CECyT No.3" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 9">
+                        <img src="images/cecyts/cecyt9.png" title="CECyT No.9" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Circuitos Lógicos Combinatorios</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Circuitos Lógicos Combinatorios</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Instrumentación Electrónica</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Circuitos Lógicos Secuenciales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Elementos Electrónicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Lenguaje De Programación</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Software De Diseño Electrónico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Aplicaciones De Dispositivos Móviles</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Arquitectura De Microcontroladores</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Dispositivos Electrónicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Electrónica Analógica Y Digital</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Acondicionamiento De Sistemas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación Orientada A Objetos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Aplicaciones Con Microcontroladores</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mantenimiento De Equipo Electrónico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Redes Digitales</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Control Y Automatización</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Internet De Las Cosas</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/digital.svg" alt="Error al Cargar" title="Técnico en Sistemas Digitales">
+            </p>
+        </div>
+        <hr id="smi">
+        <div class="article">
+            <p class="title-text">Técnico en Sistemas Mecánicos Industriales</p>
+            <p class="justificado">
+                Formación de técnicos en sistemas mecánicos industriales con conocimientos y habilidades que les permitan producir soldaduras sobre chapa de acuerdo a normas, especificaciones y manuales: fresadoras y fresadoras para piezas mecánicas según normas y especificaciones. Además de operar sistemas neumáticos y eléctricos neumáticos de acuerdo con las normas y especificaciones, en cuanto a ética, comunidad y responsabilidad.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cet ">
+                        <img src="images/cecyts/cet.jfif" title="CET No.1" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ajuste Mecánico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología De Materiales</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Higiene Y Seguridad En El Taller</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Metrología</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Perspectiva Cónica</li>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Torneado</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mecanismos Básicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos De Soldadura</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Motor Híbrido</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas Eléctricos Y Electrónicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Instalaciones De Gas</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Fresado Y Rectificado</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Circuitos Neumáticos Y Electroneumáticos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Refrigeración</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Motor Híbrido</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Inyección Electrónica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Instalaciones Eléctricas</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control Numérico Computarizado</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Controladores Lógicos Programables</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Circuitos Lógicos Electrohidráulicos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Acondicionamiento De Aire</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proyecto Mecánico Industrial</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Taller Integral</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/computer3.svg" alt="Error al Cargar" title="Técnico en Sistemas Mecánicos Industriales">
+            </p>
+        </div>
+        <hr id="soi">
+        <div class="article">
+            <p class="title-text">Técnico en Soldadura Industrial</p>
+            <p class="justificado">
+                Aplicación de los procesos de soldadura en el sector industrial a la metalmecánica, asegurando las condiciones de calidad, seguridad y servicio en las piezas fabricadas, promoviendo la cultura empresarial y las especificaciones basadas en estándares.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 7">
+                        <img src="images/cecyts/cecyt7.jpg" title="CECyT No.7" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proceso De Soldadura Y Corte Con Arco Metálico Protegido</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Metalurgia De La Soldadura</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Medición Y Trazo En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Metrología En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Organización Industrial</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos De Soldadura Y Corte Con Oxigas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ensayos Destuctivos En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas De Supervisión En Soldadura</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Costos Y Presupuestos En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Métodos De Trabajo En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Simuladores Eléctricos En Computadoras</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos Especiales De Soldadura Y Corte De Metales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ensayos No Destructivos En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño En Soldadura</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Aplicaciones En Autocad En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Protocolos De Investigación En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Optimización De La Energía Eléctrica</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Aplicaciones Industriales De Soldadura/li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Software En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Soldabilidad De Metales Ferrosos Y No Ferrosos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Automatización De Procesos De Soldadura</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Normas En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Presentación De Proyectos En Soldadura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Prototipos Tecnológicos</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/industrial.svg" alt="Error al Cargar" title="Técnico en Soldadura Industrial">
+            </p>
+        </div>
+        <hr id="te">
+        <div class="article">
+            <p class="title-text">Técnico en Telecomunicaciones</p>
+            <p class="justificado">
+                Instalación, operación y mantenimiento de redes de telecomunicaciones, así como operación de sistemas y equipos electrónicos.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 10">
+                        <img src="images/cecyts/cecyt10.png" title="CECyT No10." alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 11">
+                        <img src="images/cecyts/cecyt11.png" title="CECyT No.11" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Electrotecnia De Corriente Alterna Y Corriente Continua</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Audio</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seguridad E Higiene En Las Telecomunicaciones</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas De Supervisión En Las Telecomunicaciones</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Digital</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Electrónica Analógica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo De Soluciones Computacionales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Video</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Microcontroladores</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Medios De Transmisión</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Telecomunicaciones</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación Móvil</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología Satelital </li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Telefonía</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Redes De Datos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicaciones Móviles E Inalámbricas</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Implementación De Proyectos De Telecomunicaciones</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Entornos Inteligentes</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/telecom.svg" alt="Error al Cargar" title="Técnico en Telecomunicaciones">
+            </p>
+        </div>
+        <hr id="ali">
+        <div class="article">
+            <p class="title-text">Técnico en Alimentos</p>
+            <p class="justificado">
+                Un técnico de alimentos es la persona responsable de organizar y dirigir los productos o servicios alimentarios. Los técnicos de alimentos trabajan con el personal administrativo y de seguridad en todos los aspectos de la preparación y manipulación de alimentos. Funciona para garantizar que los alimentos y el equipo se manipulen de forma segura y que los alimentos se cocinen correctamente. Esto significa que el técnico de alimentos trabajará con el personal administrativo y de seguridad para garantizar la calidad de los alimentos, la limpieza de la cocina y el correcto funcionamiento del equipo. Además, el técnico de alimentos también ayudará a administrar el proceso de cocción y servicio y se asegurará de que la comida esté bien cocida. También ayudará con la limpieza básica.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 15">
+                        <img src="images/cecyts/cecyt15.jpg" title="CECyT No.15" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Principios De Análisis De Alimentos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Higiene Y Seguridad En La Industria Alimentaria</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Bioquímica De Los Alimentos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Microbiología De Los Alimentos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Aditivos Alimentarios</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos De Alimentos Y Bebidas Fermentadas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos De Frutas, Verduras Y Cereales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos Administrativos En La Industria Alimentaria</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Envases</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis Sensorial</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Toxicología De Alimentos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos De Productos Lácteos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos De Productos Cárnicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Calidad En La Industria Alimentaria</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Formulación Y Evaluación De Proyectos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Marketing Y Realidad Aumentada</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnologías Alimentarias En Alimentos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tradicionales De México</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas Culinarias Moleculares</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/comida2.svg" alt="Error al Cargar" title="Técnico en Alimentos">
+            </p>
+        </div>
+        <hr id="eco">
+        <div class="article">
+            <p class="title-text">Técnico en Ecología</p>
+            <p class="justificado">
+                Aplicar de manera integral los conocimientos adquiridos para descubrir problemas ambientales y proponer soluciones basadas en las leyes y normativas nacionales e internacionales aplicables con un fuerte compromiso social para lograr el desarrollo sostenible del medio natural y la relación armónica entre la sociedad y el medio ambiente.
+               <br>
+               <div class="disponibilidad">
+                   <br>
+                   <p>La escuela que tiene esta carrera es: </p>
+                   <a href="Cecyts.html#Cecyt 6">
+                       <img src="images/cecyts/cecyt6.png" title="CECyT No.6" alt="">
+                   </a>
+               </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Recursos Naturales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnica Instrumental Para Análisis Ambiental I</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Problemática Ambiental</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnica Instrumental Para Análisis Ambiental II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gestión Ambiental</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seguridad, Higiene Y Medio Ambiente</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Manejo Integral De Materiales Y Residuos Peligrosos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Estudio De Impacto Ambiental</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Manejo Integral De Residuos Sólidos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Monitoreo Y Calidad Del Aire</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Caracterización Y Recuperación De Suelos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Caracterización Y Tratamiento De Aguas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Educación Ambiental Y Desarrollo Sostenible</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seminario De Proyectos De Titulación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Liderazgo Y Generación De Empresas</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/ecologia.svg" alt="Error al Cargar" title="Técnico en Ecología">
+            </p>
+        </div>
+        <hr id="enf">
+        <div class="article">
+            <p class="title-text">Técnico en Enfermería</p>
+            <p class="justificado">
+                Un técnico de enfermería es un técnico superior capacitado en la integración de equipos médicos, colaborando con expertos regionales en la realización de conductas de enfermería esenciales y brindando atención humana a individuos, familias y comunidades.
+               <br>
+               <div class="disponibilidad">
+                   <br>
+                   <p>La escuela que tiene esta carrera es: </p>
+                   <a href="Cecyts.html#Cecyt 6">
+                       <img src="images/cecyts/cecyt6.png" title="CECyT No.6" alt="">
+                   </a>
+               </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Enfermería Comunitaria Y Salud Pública</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Teorías Y Proceso De Atención En Enfermería</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas En Enfermería</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Fisiología Clínica En Enfermería</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Bioética En Enfermería</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Legislación En Enfermería</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Enfermería En La Atención Básica Del Paciente</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Enfermería Médico-Quirúrgica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proceso Salud-Enfermedad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Farmacología En Enfermería</li>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Enfermería Materno-Infantil</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Enfermería En La Atención Del Adulto Mayor</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Enfermería En La Atención Pediátrica</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proyecto De Investigación De Enfermería En Salud Reproductiva</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Metodología De La Investigación En Enfermería</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/enfermera.svg" alt="Error al Cargar" title="Técnico en Enfermería">
+            </p>
+        </div>
+        <hr id="lc">
+        <div class="article">
+            <p class="title-text">Técnico en Laboratorista Clínico</p>
+            <p class="justificado">
+                Capacitación de técnicos de laboratorio químico altamente calificados y competitivos en análisis físicos, químicos y biológicos de alimentos, bebidas, productos farmacéuticos y químicos en general; Con actitud de servicio, portadora de valores cívicos y éticos, comprometidos en trabajar interactivamente con profesionalismo en el desempeño industrial de nuestro país.
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 6">
+                        <img src="images/cecyts/cecyt6.png" title="CECyT No.6" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 15">
+                        <img src="images/cecyts/cecyt15.jpg" title="CECyT No.15" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnica Y Calidad Instrumental I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Higiene, Seguridad Y Control De Residuos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnica Y Calidad Instrumental II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis Químico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Optimización De Recursos Productivos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis Y Tratamiento De Agua</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Uso Y Regulación De Aditivos Químicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control Sanitario Microbiológico</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Y Desarrollo De Proyectos I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Y Diseño De Nuevos Productos I</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis De Alimentos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología Química</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control De La Calidad De Procesos Productivos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Y Desarrollo De Proyectos II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Y Diseño De Nuevos Productos II</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/laboratorio.svg" alt="Error al Cargar" title="Técnico en Laboratorista Clínico">
+            </p>
+        </div>
+        <hr id="lq">
+        <div class="article">
+            <p class="title-text">Técnico en Laboratorista Químico</p>
+            <p class="justificado">
+                Capacitación de técnicos de laboratorio químico altamente calificados y competitivos en análisis físicos, químicos y biológicos de alimentos, bebidas, productos farmacéuticos y químicos en general; Con actitud de servicio, portadora de valores cívicos y éticos, comprometidos a trabajar interactivamente con profesionalismo en el desempeño industrial de nuestro país.
+               <br>
+               <div class="disponibilidad">
+                   <br>
+                   <p>La escuela que tiene esta carrera es: </p>
+                   <a href="Cecyts.html#Cecyt 6">
+                       <img src="images/cecyts/cecyt6.png" title="CECyT No.6" alt="">
+                   </a>
+               </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnica Y Calidad Instrumental I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Higiene, Seguridad Y Control De Residuos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnica Y Calidad Instrumental II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis Químico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Optimización De Recursos Productivos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis Y Tratamiento De Agua</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Uso Y Regulación De Aditivos Químicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control Sanitario Microbiológico</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Y Desarrollo De Proyectos I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Y Diseño De Nuevos Productos I</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis De Alimentos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología Química</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control De La Calidad De Procesos Productivos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Y Desarrollo De Proyectos II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Y Diseño De Nuevos Productos II</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/quimico.svg" alt="Error al Cargar" title="Técnico en Laboratorista Químico">
+            </p>
+        </div>
+        <hr id="sus">
+        <div class="article">
+            <p class="title-text">Técnico en Sustentabilidad</p>
+            <p class="justificado">
+                El egresado de esta carrera obtendrá una formación en ciencias, ingeniería y humanidades que le permitirá observar y actuar de manera responsable, respetuosa y de acuerdo con las leyes aplicables desde diferentes perspectivas para prevenir y solucionar problemas relacionados con la productividad sostenible. , Manteniendo los elementos ambientales saludables, contribuyendo así al desarrollo de México.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 15">
+                        <img src="images/cecyts/cecyt15.jpg" title="CECyT No.15" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción Al Medio Ambiente Y Sustentabilidad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ecología Y Economía</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química Ambiental</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ética Y Normatividad Ambiental</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Huella Ecológica Y Tecnologías Para La Sustentabilidad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Instrumentación Y Monitoreo Ambiental</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistema De Información Geográfica </li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Prospectiva Sustentable</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sustentabilidad Y Calidad De Vida</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Prefactibilidad Del Proyecto</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Estudio De Los Ecosistemas Regionales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química Verde</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Etnoecología Y Patrimonio Biocultural</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ecotecnologías Y Sistemas De Producción Sustentables</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gestión De Proyectos Sustentables</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Innovación Tecnológica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Manejo Integral De Residuos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Estudio De Impacto Ambiental</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/susten.svg" alt="Error al Cargar" title="Técnico en Sustentabilidad">
+            </p>
+        </div>
+        <hr id="adm">
+        <div class="article">
+            <p class="title-text"> Técnico en Administración</p>
+            <p class="justificado">
+                Formar técnicos de gestión competentes y competir con actitud de servicio, poseedores de sólidos valores cívicos y éticos, comprometidos con su trabajo con interoperabilidad profesional en todos los procesos, alto desempeño y actividades productivas los hará destacar en los organismos tanto nacionales como internacionales.
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 12">
+                        <img src="images/cecyts/cecyt12.png" title="CECyT No.12" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 13">
+                        <img src="images/cecyts/cecyt13.png" title="CECyT No.13" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Derecho Laboral</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Capital Humano</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Planeación Estratégica</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Sustentable</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Habilidades De Negociación Digital</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Sueldos Y Salarios</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Organizacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mercadotecnia Digital</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ética Y Responsabilidad Social</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Inventarios</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Plan De Negocios</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Calidad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Paquetería Administrativa</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Producción</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Nociones De Finanzas</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comercio Internacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Dirección Empresarial</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/admin.svg" alt="Error al Cargar" title="Técnico en Administración">
+            </p>
+        </div>
+        <hr id="aet">
+        <div class="article">
+            <p class="title-text">Técnico en Administración de Empresas Turísticas</p>
+            <p class="justificado">
+                Formar técnicos en gestión empresarial turística altamente competentes y competitivos, con actitud de servicio con valores cívicos y compromiso de interactuar con profesionalismo en las actividades turísticas locales e internacionales.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 13">
+                        <img src="images/cecyts/cecyt13.png" title="CECyT No.13" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Principios Culinarios</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración Y Turismo</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cocinas Del Mundo</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Operación Hotelera</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés Turístico I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Sustentable</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Taller De Conversación I</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Agencias De Viajes</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Patrimonio Turístico Nacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración Hotelera</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Operación De Establecimientos De Alimentos Y Bebidas</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés Turístico II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Taller De Conversación II</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proyectos Turísticos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Globalizadores De Agencias De Viajes</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Patrimonio Turístico Internacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Eventos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés Turístico III</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Taller De Conversación III</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/turista.svg" alt="Error al Cargar" title="Técnico en Administración De Empresas Turísticas">
+            </p>
+        </div>
+        <hr id="ci">
+        <div class="article">
+            <p class="title-text">Técnico en Comercio Internacional</p>
+            <p class="justificado">
+                La profesión líder en la formación de técnicos líderes en comercio internacional con alta calidad académica respaldada por tecnologías de la información y la comunicación competitivas a nivel nacional e internacional les permite incorporarse a instituciones de educación superior y adaptarse fácilmente a las necesidades de la fuerza laboral; Interactuar profesionalmente en el intercambio de bienes y servicios en el mercado internacional; Proyectos pioneros de toma de decisiones que integran grupos de trabajo de auditoría y crean nuevos procesos a través de una filosofía de servicio, honestidad e integridad
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 5">
+                        <img src="images/cecyts/cecyt5.jpg" title="CECyT No.5" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mercadotecnia Internacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comercio Internacional</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tratados Y Acuerdos Del Comercio Exterior Mexicano</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Geopolítica Económica</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> E- Commerce Y Mercadotecnia De Servicios</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Negociaciones Creativas Con Clientes, Socios Y Reguladores Internacionales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> </li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> </li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Régimen Legal De Comercio Exterior Mexicano</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Logística Internacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Legislación Aduanera</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración Y Finanzas En El Comercio Exterior</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gestión De Negocios Internacionales</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Financiamiento</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Laboratorio De Clasificación Arancelaria</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo De Proyectos De Exportación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología Digital En El Comercio Internacional</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Sustentable En El Comercio Internacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cadenas De Suministro Internacionales</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/internacional.svg" alt="Error al Cargar" title="Técnico en Comercio Internacional">
+            </p>
+        </div>
+        <hr id="con">
+        <div class="article">
+            <p class="title-text">Técnico en Contaduría</p>
+            <p class="justificado">
+                Convertirse en el mejor técnico contable de nivel medio superior con base en la filosofía del Instituto Politécnico Nacional, el cual es reconocido por el alto nivel de los estudiantes así como por los buenos logros en el trabajo de los estudiantes Graduado en Contaduría y Administración. En general, por la calidad de sus conocimientos, habilidades, actitudes y valores y de acuerdo con los avances tecnológicos, sociales, económicos y laborales que la empresa requiere.
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 5">
+                        <img src="images/cecyts/cecyt5.jpg" title="CECyT No.5" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 12">
+                        <img src="images/cecyts/cecyt12.png" title="CECyT No.12" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 13">
+                        <img src="images/cecyts/cecyt13.png" title="CECyT No.13" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 14">
+                        <img src="images/cecyts/cecyt14.png" title="CECyT No.14" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Legislación Fiscal</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Organización Empresarial</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Aplicación Matemática, Contable Y Administrativa</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Legislación Fiscal Personas Físicas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Marco Normativo Contable</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Legislación Fiscal Personas Morales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Nociones De Finanzas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Paquetería Contable</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Personalidad Financiera</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Negocios Sustentables</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seguridad Social</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Nóminas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Nociones De Auditoría</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo De Proyectos De Investigación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Contabilidad De Costos</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/money.svg" alt="Error al Cargar" title="Técnico en Contaduría">
+            </p>
+        </div>
+        <hr id="gas">
+        <div class="article">
+            <p class="title-text">Técnico en Gastronomía</p>
+            <p class="justificado">
+                Los Técnicos en Gastronomía tienen como objetivo formar profesionales con habilidades valiosas, digitales, emocionales, científicas y tecnológicas, para desarrollar técnicas culinarias en preparación previa. Cocina nacional e internacional que satisfaga las necesidades nutricionales de los pioneros, respetando el impacto de los estándares de higiene y seguridad, respondiendo a las necesidades culinarias de la comunidad y empresas dedicadas a este sector, creando un negocio competitivo, sostenible e innovador.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 13">
+                        <img src="images/cecyts/cecyt13.png" title="CECyT No.13" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas Culinarias</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Química De Alimentos Y Principios Nutricionales</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Certificaciones Normativas, Seguridad E Higiene</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gastronomía Mexicana</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Conservas Y Prefabricados</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cocina Fría</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración Gastronómica Financiera</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gestión De Eventos Y Banquetes</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gastronomía Internacional I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Panadería</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tendencias Gastronómicas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Enología Y Coctelería</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Servicios En Restaurante Y Bar</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gastronomía Internacional II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Plan De Negocios De Alimentos Y Bebidas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Marketing Gastronómico</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Repostería</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Francés Gastronómico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Inglés Gastronómico</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/comida.svg" alt="Error al Cargar" title="Técnico en Gastronomía">
+            </p>
+        </div>
+        <hr id="gc">
+        <div class="article">
+            <p class="title-text">Técnico en Gestión de la Ciberseguridad</p>
+            <p class="justificado">
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 13">
+                        <img src="images/cecyts/cecyt13.png" title="CECyT No.13" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas Operativos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ciberseguridad Y Sociedad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Navegación Segura</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Redes De Computadoras</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gobernanza De Tecnologías De La Información</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis De Amenazas Y Delitos Informáticos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Dictamen Pericial En TIC´S</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Modelos De Seguridad De La Información</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seguridad En Redes</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Bases De Datos Y De Respaldo De Información</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Identificación, Autenticación Y Control De Acceso </li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Minería De Datos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Software Malicioso</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Auditoría Informática</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Información Seguros</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Forensia Informática</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Pruebas De Penetración A Sistemas Informáticos</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/seguridad.svg" alt="Error al Cargar" title="Técnico en Gestión De La Ciberseguridad">
+            </p>
+        </div>
+        <hr id="tinfo">
+        <div class="article">
+            <p class="title-text">Técnico en Informática</p>
+            <p class="justificado">
+                Ser la ocupación principal a nivel técnico que capacita a los egresados para ser aceptados competitivamente en el mercado laboral; Con profesores con excelentes planes de carrera y programas de estudio actuales para desarrollar las habilidades de nuestros estudiantes que les permitan crear y / o administrar sistemas de información utilizando tecnología informática.               <br>
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 5">
+                        <img src="images/cecyts/cecyt5.jpg" title="CECyT No.5" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 12">
+                        <img src="images/cecyts/cecyt12.png" title="CECyT No.12" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 13">
+                        <img src="images/cecyts/cecyt13.png" title="CECyT No.13" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 14">
+                        <img src="images/cecyts/cecyt14.png" title="CECyT No.14" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Herramientas De Programación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ensamblado Y Mantenimiento De PCs</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación Orientada A Objetos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Teleinformática</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas Operativos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación De Dispositivos Móviles</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Base De Datos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Modelado De Sistemas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Interacción Usuario Computadora</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Producción Multimedia Y Ambientes Virtuales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Web</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación Avanzada</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gestión De Proyectos Informáticos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas De Información</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/info.svg" alt="Error al Cargar" title="Técnico en Informática">
+            </p>
+        </div>
+        <hr id="merca">
+        <div class="article">
+            <p class="title-text">Técnico en Mercadotecnia</p>
+            <p class="justificado">
+                Carreras líderes en ciencias sociales y administración de manera no académica, capacitando a tecnólogos de marketing calificados y competitivos en sus campos para convertirse en expertos en éxito empresarial. Esta capacitación se realiza con el apoyo de docentes con su excelente calificación y educación, aplicando planes y currículos existentes que permitirán a los egresados ​​desarrollar sus calificaciones y habilidades para impulsar e incrementar las ventas de la institución mediante el uso de herramientas especializadas.
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 14">
+                        <img src="images/cecyts/cecyt14.png" title="CECyT No.14" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Fundamentos Y Elementos De La Mercadotecnia</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comportamiento Del Comsumidor</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Investigación De Mercados</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Y Desarrollo Del Producto</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comportamiento Organizacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Marca</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Realidad Virtual</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Publicidad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Promoción De Ventas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tácticas Y Estratégias De Las Ventas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Logística Y Canales de Distribución</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mercadotecnia Directa</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Habilidades Directivas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Marco Normativo Contable</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mercadotecnia Internacional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Promoción Y Gestión De Empresas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Relaciones Públicas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Ventas</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seminario De Mercadotecnia</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mercadotecnia Social</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Laboratorio De Contaduría</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/market2.svg" alt="Error al Cargar" title="Técnico en Mercadotecnia">
+            </p>
+        </div>
+        <hr id="mercad">
+        <div class="article">
+            <p class="title-text">Técnico en Mercadotecnia Digital</p>
+            <p class="justificado">
+                El técnico de marketing digital desarrollará habilidades específicas para los estudiantes para ayudarlos a crear e implementar estrategias de marketing y ofrecer discursos de valor creativo.
+                <br>
+                El desarrollo de Internet ha revolucionado el mercado. El ecosistema digital moderno ofrece una serie de ventajas, entre las que se encuentran diversas herramientas que monitorearán las variables que buscan satisfacer las necesidades actuales de las organizaciones. Nuestros graduados, que trabajan en un entorno global competitivo, se esforzarán por el desarrollo sostenible, tendrán una posición de liderazgo y capacitarán a nativos digitales clave para participar en el entorno de su comunidad.
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 12">
+                        <img src="images/cecyts/cecyt12.png" title="CECyT No.12" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 14">
+                        <img src="images/cecyts/cecyt14.png" title="CECyT No.14" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción A La Mercadotecnia Digital</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comportamiento Del Consumidor  Y Neuromarketing</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Y Desarrollo Del Producto</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Investigación De Mercados</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Marca</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mezcla De Mercadotecnia Digital</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Mercadológica Digital</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comercio Electrónico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ética Y Legislación Digital</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Contenidos Digitales</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción Al Diseño Gráfico</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Taller De Habilidades De Negociación Digital</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Métrica Y Analítica Web</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Social Media</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Economía Digital</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Transformación Digital De Las Organizaciones</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Plan De Mercadotecnia Digital</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Plan De Negocios Digitales</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/market.svg" alt="Error al Cargar" title="Técnico en Mercadotecnia Digital">
+            </p>
+        </div>
+        <hr id="tds">
+        <div class="article">
+            <p class="title-text">Técnico en Desarrollo de Software</p>
+            <p class="justificado">
+                Satisfacer las necesidades de aprendizaje de la empresa para egresados ​​de la especialización en desarrollo de software que posean las habilidades más demandadas en la industria del software en México.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 9">
+                        <img src="images/cecyts/cecyt9.png" title="CECyT No.9" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación Orientada A Objetos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Laboratorio De Proyectos de La Información I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Proyectos De La Tecnologías De La Información</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación Y Servicios Web</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Bases De Datos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Laboratorio De Proyectos de La Información II</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Proyectos De La Tecnologías De La Información II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas De Programación Personal Con Calidad</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción A Los Sistemas Distribuidos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción A La Ingeniería De Pruebas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seguridad Web Y Aplicaciones</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Laboratorio De Proyectos de La Información III</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Automatización De Pruebas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo Humano Y Personal</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Métodos Ágiles De Programación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Soporte De Software</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Ingeniería De Software Básica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Laboratorio De Proyectos de La Información IV</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Plan De Negocios</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proyecto Integrador</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/progra2.svg" alt="Error al Cargar" title="Técnico en Desarrollo En Software">
+            </p>
+        </div>
+        <hr id="sisc">
+        <div class="article">
+            <p class="title-text">Técnico en Sistemas Computacionales</p>
+            <p class="justificado">
+                La cerrera NMS se esfuerza por brindar diversos programas educativos que innoven los métodos de enseñanza y aprendizaje optimizando los recursos y contribuyendo a la formación en el uso de las TIC a través de contenidos de alta calidad y personal calificado, en su compromiso de mejorar el crecimiento personal y potenciar las habilidades y conocimientos profesionales que capacitan profesionalmente. Técnicos capacitados en sistemas informáticos colaboran en Mejora de cifrado y procesamiento de técnicas de procesamiento de información correspondientes a hardware y software.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cet">
+                        <img src="images/cecyts/cet.jfif" title="CET No.1" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Principios De Programación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción A Los Sistemas De Bases De Datos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sistemas Operativos De Equipos Computacionales</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Elementos Electrónicos De Sistemas Computacionales</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Metrología De La Programación Orientada A Objetos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Creación De Bases De Datos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Estructuras De Computadoras</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Software De Distribución Libre</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Electrónica Digital Aplicada A Sistemas</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Programación Gráfica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Almacenamiento Y Control De La información</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Principios Y Configuración De Redes De Cómputo</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Aplicación De Herramientas Web</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción Al Diseño De Circuitos Electrónicos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Desarrollo De Aplicaciones Con Metadología</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proyectos Integrador Con Bases De Datos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Organización De Centros De Cómputo</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seguridad De La información</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Herramientas Para La Edición Y Animación</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/computer2.svg" alt="Error al Cargar" title="Técnico en Sistemas Computacionales">
+            </p>
+        </div>
+        <hr id="nut">
+        <div class="article">
+            <p class="title-text">Técnico en Nutrición Humana</p>
+            <p class="justificado">
+                En ésta carrera se busca la formación integral de Técnicos en Nutrición con una concepción humanista utilizando la ciencia y la tecnología en el ejercicio profesional para responder a los retos nutricionales que enfrenta la población mexicana
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 6">
+                        <img src="images/cecyts/cecyt6.png" title="CECyT No.6" alt="">
+                    </a>
+                    <a href="Cecyts.html#Cecyt 15">
+                        <img src="images/cecyts/cecyt15.jpg" title="CECyT No.15" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción A La Ciencia De La Nutrición Humana</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Anatomía Y Fisiología Del Aparato Digestivo</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Nutrición En El Ciclo De La Vida</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Nutrición  Y Enfermedad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo Dietético</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Evaluación Del Estado De Nutrición</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Planes De Alimentación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Servicios De Alimentación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Manejo Y Control De Calidad En Servicios De Alimentación</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas Culinarias</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Empleo De Alimentos Procesados En Servicios De Alimentación</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Legislación Para La Atención Nutricional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Educación Nutricional</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Sobrepeso Y Obesidad: Tratamiento Nutricional Básico</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proyecto De Un Servicio De Alimentación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Transtornos De La Alimentación</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Panorama Nutricional De México</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/nutricion.svg" alt="Error al Cargar" title="Técnico en Nutrición Humana">
+            </p>
+        </div>
+        <hr id="tarh">
+        <div class="article">
+            <p class="title-text"> Técnico en Administración de Recursos Humanos</p>
+            <p class="justificado">
+                Convertirse en uno de los mejores Licenciados en Tecnología en Método No Escolar en Ciencias Sociales Competitivas y Gestión con un programa de desempeño integral, flexible y actualizado dentro de un marco ético y ético. Cualidades humanas capaces de mejorar y mejorar el bienestar de los graduados; Diseño y promoción enfocados a encontrar soluciones alternativas a problemas empresariales.
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 14">
+                        <img src="images/cecyts/cecyt14.png" title="CECyT No.14" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Planeación Estratégica</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Reclutamiento Y Selección De Personal</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Contratación E Inducción A La Empresa</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Derecho Laboral</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Cálculo De Nómina</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Análisis De Puestos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Estructura Fiscal Y De Seguridad Social En La Relación Laboral</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Capacitación Y Desarrollo</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Seguridad Y Protección Civil En Las Organizaciones</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gestión Del Capital Humano</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Valuación De Puestos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Proyecto De Recursos Humanos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Gestión De La Calidad</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/humanos.svg" alt="Error al Cargar" title="Técnico en Administración De Recursos Humanso">
+            </p>
+        </div>
+        <hr id="qf">
+        <div class="article">
+            <p class="title-text">Técnico Químico Farmacéutico</p>
+            <p class="justificado">
+                Al final de su carrera técnica en Química Farmacéutica, los graduados estarán listos para ingresar a la investigación de alto nivel en la industria biomédica, así como para ingresar inmediatamente a la industria de bienes y servicios aplicando el uso de los conocimientos y habilidades existentes. para ellos. Posibilita la instalación, operación y mantenimiento de los sistemas que componen la red de comunicaciones digitales que actúa como intermediario entre gerentes y operadores que apoyan con calidad a la organización industrial
+               <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>Las escuelas que tienen esta carrera son: </p>
+                    <a href="Cecyts.html#Cecyt 6">
+                        <img src="images/cecyts/cecyt6.png" title="CECyT No.6" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Mezcla De Polvos De Procesos Farmacéuticos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Introducción Empresarial De Industria Farmacéutica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Optimización De Recursos En Áreas De Procesos Farmacéuticos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología Farmacéutica I</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Producción De Granulados</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Administración De Recursos En Áreas De Procesos Farmacéuticos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Higiene Y Seguridad Industrial</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología Farmacéutica II</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Producción De Tabletas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Producción De Cápsulas</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Técnicas De Supervisión De La Industria Farmacéutica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Microbiología General</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Producción De Grageas</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control De Contaminantes En La Industria Farmacéutica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control De Procesos De Producción Farmacéuticos</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Innovación Tecnológica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control Total De La Calidad En La Industria Farmacéutica</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/doctor.svg" alt="Error al Cargar" title="Técnico en Químico Farmacéutico">
+            </p>
+        </div>
+        <hr id="tmac">
+        <div class="article">
+            <p class="title-text">Técnico en Manufactura Asistida por Computadora</p>
+            <p class="justificado">
+                Capacitar técnicos con un alto nivel de conocimientos y habilidades en el manejo de instrumentos de medición, operación de máquinas especiales, robótica, neumática, hidráulica y fabricación de celdas para ingresar al sector manufacturero en el país.
+                <br>
+                <div class="disponibilidad">
+                    <br>
+                    <p>La escuela que tiene esta carrera es: </p>
+                    <a href="Cecyts.html#Cecyt 3">
+                        <img src="images/cecyts/cecyt3.png" title="CECyT No.3" alt="">
+                    </a>
+                </div>
+                A parte de las materias de <a href="escuelas.html#tronco" title="¿Qué es Tronco Común? Ver..."><b>tronco común</b></a> esta carrera cuenta con las siguientes materias:
+                <br>
+                <div class="lista">
+                    <p class="subtitle">Tercer Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Elementos Mecánicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Tecnología De Los Materias</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Eléctrica</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Cuarto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Instrumentos De Medición</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos Por Desprendimiento De Viruta</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Electrónica</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control Estadístico Del Proceso</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Control De Calidad</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Instrumentación Electrónica</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Quinto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Neumática</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Laboratorio De Prueba Y Mediciones</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Procesos De Manufactura En Máquinas Industriales</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Informática Aplicada</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Células De Manufactura</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Software De Diseño Por Computadora</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p class="subtitle">Sexto Semestre</p>
+                    <ul>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Oleodinámica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Robótica</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Máquinas De Control Numérico Computarizado</li>
+                        <br>
+                        <a class="hover-a" href= "#" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                        <br><br>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño Asistido Por Computadora</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Diseño De Sistemas Mecatrónicos</li>
+                        <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Adquisición De Control</li>
+                    </ul>
+                </div>
+                <img class="lista__imagen" src="images/unDraw/robot.svg" alt="Error al Cargar" title="Técnico en Manufactura Asistida por Computadora">
+            </p>
+        </div>
+    </section>
