@@ -303,6 +303,23 @@ a{
   cursor: grabbing;
 }
 
+
+.card .button button{
+  background: #1b3b91;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #234CBE;
+}
+
 .card::before{
   content: "";
   position: absolute;
@@ -311,7 +328,6 @@ a{
   background: #1b3b91;
   border-radius: 20px 20px 0 0;
 }
-
 .card .card-content{
   display: flex;
   flex-direction: column;
@@ -326,10 +342,156 @@ section .card .image{
   width: 140px;
   border-radius: 50%;
   padding: 3px;
-  background: #ffffff;
+  background: #fff;
   border: 3px solid #1b3b91;
 }
-
+/*_______________*/
+#morado{
+  border: 3px solid #6c269b;
+}
+.card .button .morado-button{
+  background: #6c269b;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .morado-button:hover{
+  background: #73389b;
+}
+/*_______________*/
+#esp{
+  border: 3px solid #a82020;
+}
+.card .button .esp-button{
+  background: #a82020;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .esp-button:hover{
+  background: #c53434;
+}
+/*_______________*/
+#fis{
+  border: 3px solid #1bb12f;
+}
+.card .button .fis-button{
+  background: #1bb12f;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .fis-button:hover{
+  background: #36ce4a;
+}
+/*_______________*/
+#geo{
+  border: 3px solid #eb9e2b;
+}
+.card .button .geo-button{
+  background: #eb9e2b;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .geo-button:hover{
+  background: #ffb03a;
+}
+/*_______________*/
+#morado2{
+  border: 3px solid #b514ca;
+}
+.card .button .morado2-button{
+  background: #b514ca;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .morado2-button:hover{
+  background: #c722dd;
+}
+/*_______________*/
+#bio{
+  border: 3px solid #0ab120;
+}
+.card .button .bio-button{
+  background: #0ab120;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .bio-button:hover{
+  background: #19d332;
+}
+/*_______________*/
+#his{
+  border: 3px solid #a09005;
+}
+.card .button .his-button{
+  background: #a09005;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .his-button:hover{
+  background: #bbaa12;
+}
+/*_______________*/
+#ama{
+  border: 3px solid #238d91;
+}
+.card .button .ama-button{
+  background: #238d91;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .button .ama-button:hover{
+  background: #34b6bb;
+}
+#margen-title-cuest{
+  margin-bottom: 50px;
+}
 section .card .image img{
   height: 100%;
   width: 100%;
@@ -376,6 +538,9 @@ section .card .image img{
   font-size: 18px;
   font-weight: 600;
 }
+#name{
+  font-size: 14.68px;
+}
 
 .name-profession .profession{
   font-size: 12px;
@@ -397,23 +562,6 @@ section .card .image img{
   justify-content: space-around;
   margin-top: 20px;
 }
-
-.card .button button{
-  background: #1b3b91;
-  outline: none;
-  border: none;
-  color: #fff;
-  padding: 8px 22px;
-  border-radius: 20px;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.button button:hover{
-  background: #234CBE;
-}
-
 .swiper-pagination{
   position: absolute;
 }
@@ -897,29 +1045,6 @@ b{
 body.dark .home .text{
     color: var(--text-color);
 }
-@media (max-width: 900px) {
-  .container .cover{
-    display: none;
-  }
-  .form-content .login-form,
-  .form-content .signup-form{
-    width: 100%;
-  }
-  .form-content .signup-form{
-    display: none;
-  }
-  .container #flip:checked ~ .forms .signup-form{
-    display: block;
-  }
-  .container #flip:checked ~ .forms .login-form{
-    display: none;
-  }
-  .boton{
-    width: 35%;
-    margin-top: 140%;
-  }
-  
-}
 /*___________________________________________________________*/
 /*COMIPEMS*/
 li{
@@ -1100,12 +1225,13 @@ iframe{
   list-style: none;
 }
 .chat ul::-webkit-scrollbar{
-  width: 5px;
+  width: 7px;
   background: transparent;
+  scroll-behavior: smooth;
 }
 .chat ul::-webkit-scrollbar-thumb{
   background: var(--primary-color);
-  border-radius: 5px;
+  border-radius: 7px;
 }
 #user{
   background: none;
@@ -1132,6 +1258,7 @@ iframe{
   color: var(--text-color);
   border: 1px solid var(--slider-color);
   border-radius: 5px;
+  cursor: pointer;
   transition: all 0.5s ease;
 }
 .chat button:hover{
@@ -1202,4 +1329,28 @@ iframe{
   left: 0;
   right: 0;
   margin: auto;
+} 
+/*_______________________________________________________________________*/
+/*RESPONSIVE  :v*/
+@media (max-width: 900px) {
+  .container .cover{
+    display: none;
+  }
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: 100%;
+  }
+  .form-content .signup-form{
+    display: none;
+  }
+  .container #flip:checked ~ .forms .signup-form{
+    display: block;
+  }
+  .container #flip:checked ~ .forms .login-form{
+    display: none;
+  }
+  .boton{
+    width: 35%;
+    margin-top: 140%;
+  }
 }
