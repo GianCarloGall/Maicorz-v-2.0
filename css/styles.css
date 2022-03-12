@@ -619,6 +619,7 @@ section .card .image img{
   text-align: center;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   font-size: 30px;
+  font-weight: 500;
   margin-bottom: 15px;
   margin-top: 15px;
   color: var(--slider-color);
@@ -1101,6 +1102,7 @@ li{
 .subtitle{
   text-align: center;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
   font-size: 25px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -1329,7 +1331,52 @@ iframe{
   left: 0;
   right: 0;
   margin: auto;
-} 
+}
+.subtitleP{
+  text-align: left;
+  font-weight: 500;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: var(--slider-color);
+}
+.preguntas{
+  text-align: justify;
+  color: var(--text-color);
+}
+.prueba{
+  width: 80%;
+  margin-left: 10%;
+}
+.prueba .radio{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30%;
+}
+.respuestas{
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: justify;
+  color: var(--text-color);
+}
+.boton-prueba{
+  width: 16%;
+  margin: 10px;
+  margin-left: 42%;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.boton-prueba:hover{
+  background: #234CBE;
+}
 /*_______________________________________________________________________*/
 /*RESPONSIVE  :v*/
 @media (max-width: 900px) {
