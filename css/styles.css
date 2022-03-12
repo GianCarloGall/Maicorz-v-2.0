@@ -1081,9 +1081,9 @@ iframe{
   transform: rotate(180deg);
 }
 .chat{
-  width: 50%;
+  width: 70%;
   height: 80%;
-  margin-left: 25%;
+  margin-left: 15%;
   padding: 30px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -1124,7 +1124,7 @@ iframe{
   color: var(--sidebar-color);
 }
 .form-chat{
-  margin-top: 75%;
+  margin-top: 55%;
 }
 .chat-image{
   opacity: var(--opacity);
@@ -1135,4 +1135,42 @@ iframe{
   right: 0;
   margin: auto;
   width: 50%;
+}
+.image-perfil{
+  position: absolute;
+  width: 50%;
+  height: 51%;
+  right: 42%;
+  margin-top: 4%;
+  position: absolute;
+  line-height: 75%;
+  overflow: hidden;
+  display: inline-block;
+}
+.image-perfil img{
+  margin-bottom: 5px;
+  width: 350px;
+  height: 350px;
+}
+.perfil-card{
+  width: 90%;
+  height: 75%;
+  padding: 30px;
+  margin-left: 5%;
+  margin-top: 3%;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.perfil-card ul {
+  list-style: none;
+  animation: cambiar1 10s infinite;
+}
+@keyframes cambiar1{
+  0%{margin-top: 0%;}
+  30%{margin-top: 0%;}
+
+  35%{margin-top: -57%;}
+  70%{margin-top: -57%;}
+
+  75%{margin-top: 0%;}
+  100%{margin-top: 0%;}
 }
