@@ -582,6 +582,7 @@ ul{
     --text-color: rgb(24, 24, 24);
     --slider-color: #0F202E;
     --loading: url(https://acegif.com/wp-content/uploads/loading-4.gif);
+    --opacity: 0.5;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -610,6 +611,7 @@ body.dark{
     --text-color: rgb(216, 216, 216);
     --slider-color: #326B9A;
     --loading: url(https://acegif.com/wp-content/uploads/loading-4.gif);
+    --opacity: 0.1;
 }
 
 /* ===== Sidebar ===== */
@@ -708,7 +710,7 @@ header .image-text .profession{
 
 .sidebar header .image img{
     width: 40px;
-    border-radius: 6px;
+    border-radius: 50%;
 }
 
 .sidebar header .toggle{
@@ -807,7 +809,6 @@ body.dark .sidebar li a:hover .text{
     height: 50px;
     width: 60px;
 }
-
 .mode .sun-moon i{
     position: absolute;
 }
@@ -1075,4 +1076,63 @@ iframe{
 }
 #margen-top-article{
   margin-top: 55%;
+}
+.revez{
+  transform: rotate(180deg);
+}
+.chat{
+  width: 50%;
+  height: 80%;
+  margin-left: 25%;
+  padding: 30px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.chat ul{
+  padding: 5px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+  text-align: justify;
+  list-style: none;
+}
+#user{
+  background: none;
+  border: none;
+  color: var(--primary-color);
+}
+.chat-escribir{
+  width: 85%;
+  height: 30px;
+  padding: 5px;
+  margin-right: 5px;
+  color: var(--text-color);
+  border: 1px solid var(--slider-color);
+  background: var(--sidebar-color);
+  border-radius: 5px;
+}
+.chat button{
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  background: var(--sidebar-color);
+  color: var(--text-color);
+  border: 1px solid var(--slider-color);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.chat button:hover{
+  background: var(--slider-color);
+  color: var(--sidebar-color);
+}
+.form-chat{
+  margin-top: 75%;
+}
+.chat-image{
+  opacity: var(--opacity);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
 }
