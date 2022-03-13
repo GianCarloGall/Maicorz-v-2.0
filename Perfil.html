@@ -119,12 +119,28 @@
             </div>
             <div class="info-perfil">
                 <p class="title-text">Bienvenido (usuario#)</p>
-                <a class="calificaciones" href="#">
+                <a class="calificaciones" href="javascript:abrir()">
                     <p class="subtitle">Ver calificaciones</p>
                     <img src="images/unDraw/calificacion.svg" alt="Imagen de calificaciones">
                 </a>
             </div>
         </div>
+        <div class="ventana" id="vent">
+          <div class="cerrar">
+             <a href="javascript:cerrar()"><i class="fas fa-hand-spock"></i><br>Cerrar</a>
+          </div>
+          <div class="text-vent">
+              
+          </div>
+        </div>
     </section>
+    <script>
+        function abrir(){
+            document.getElementById("vent").style.display="block";
+        } 
+        function cerrar(){
+            document.getElementById("vent").style.display="none";
+        }
+    </script>
 </body>
 </html>

@@ -75,6 +75,9 @@
               <div class="button input-box">
                 <input type="submit" value="Ok">
               </div>
+              <div class="terminos">
+                <a href="javascript:abrir()">Términos y Condiciones</a>
+              </div>
               <div class="text sign-up-text">¿Ya tienes cuenta? <label for="flip">Inicia Sesión</label>
                 <br>
                 <a href="index.html">Regresar</a>
@@ -88,5 +91,42 @@
   <a href="index.html" class="boton">
     <i class="fa-solid fa-arrow-left-long"></i>  Regresar</a>
   </a>
+  <div class="ventana" id="vent">
+    <div class="cerrar">
+       <a href="javascript:cerrar()"><i class="fas fa-hand-spock"></i><br>Cerrar</a>
+    </div>
+    <div class="text-vent">
+      <p class="subtitle">Política de Privacidad de NoNeim</p>
+      <br><br>
+      Última actualización: 25 de noviembre del 2021
+      <br><br>
+      Esta política de privacidad ("Política de privacidad") se aplica al servicio de NoNeim ("Servicio") proporcionado por NoNeim. Una empresa 100% mexicana. NoNeim se compromete a salvaguardar los datos personales de los Usuarios y visitantes del Sitio ("NoNeim").
+      <br><br>
+      Al usar el sitio, los usuarios y visitantes aceptan cumplir y estar sujetos a esta política de privacidad, que puede modificarse o actualizarse de vez en cuando sin previo aviso, excepto en el caso de estipulaciones que requieran el consentimiento de los usuarios. En este caso, la actualización se mostrará en el Sitio.
+      <br><br>
+      Tratamiento de datos personales de usuarios y visitantes, NoNeim recopila y procesa los datos personales de los Usuarios de manera justa y legal y respetando sus derechos. NoNeim es la entidad responsable del tratamiento de los datos personales de los Usuarios y Visitantes.
+      <br><br>
+      Naturaleza de los datos personales recopilados por NoNeim
+      <br><br>
+      NoNeim recopila y procesa los datos que los Usuarios proporcionan voluntariamente para acceder o utilizar su Servicio y los datos relacionados con las preferencias y el tráfico de los Usuarios. El propósito de este procesamiento de datos es proporcionar un servicio para realizar diversas actividades de ámbito escolar. Los usuarios deben abrir una Cuenta y proporcionar a NoNeim al menos los siguientes datos de identificación personal para utilizar los Servicios: Apellido, nombre, correo electrónico, un usuario único y su contraseña.
+      <br><br>
+      NoNeim nunca recopilará ni procesará datos personales relacionados, directa o indirectamente, con la raza, la salud, la orientación sexual, los puntos de vista políticos, filosóficos o religiosos o con categorías especiales de Datos personales.
+      <br><br>
+      Conservación de los datos personales de los usuarios
+      <br><br>
+      Seguridad
+      <br><br>
+      Los datos personales que los Usuarios comunican a NoNeim son alojados en una base de datos, no obstante, los datos sensibles son cifrados para su mayor protección. NoNeim se compromete a tomar todas las precauciones necesarias para preservar la seguridad de los Datos Personales procesados y, en particular, para evitar que sean distorsionados, dañados o comunicados a personas no autorizadas.
+      <br><br><br>
+    </div>
+  </div>
+<script>
+    function abrir(){
+        document.getElementById("vent").style.display="block";
+    } 
+    function cerrar(){
+        document.getElementById("vent").style.display="none";
+    }
+</script>
 </body>
 </html>

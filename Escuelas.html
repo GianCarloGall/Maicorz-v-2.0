@@ -16,7 +16,7 @@
     <header>
       <div class="image-text">
         <span class="image">
-          <img src="images/NoNeim.png" alt="" title="NoNeim">
+          <img src="images/NoNeimDia.png" alt="" title="NoNeim">
         </span>
         <div class="text logo-text">
           <span class="name">Maicorz</span>
@@ -477,7 +477,7 @@
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo II</li>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional II</li>
                   <br>
-                  <a href="#optativa" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                  <a href="javascript:abrir()" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
                   <br><br>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Y Liderazgo</li>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Apreciación Artística</li>
@@ -559,7 +559,7 @@
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo II</li>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional II</li>
                   <br>
-                  <a href="#optativa" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                  <a href="javascript:abrir()" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
                   <br><br>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Y Liderazgo</li>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Apreciación Artística</li>
@@ -643,7 +643,7 @@
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Historia De México Contemporáneo II</li>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Orientación Juvenil Y Profesional II</li>
                   <br>
-                  <a href="#optativa" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
+                  <a href="javascript:abrir()" title="¿Qué es Optativa? Ver..."><u>Optativas</u></a>
                   <br><br>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Comunicación Y Liderazgo</li>
                   <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Apreciación Artística</li>
@@ -697,6 +697,15 @@
       </p>
     </div>
   </article>
+  <div class="ventana vent" id="vent">
+      <div class="cerrar">
+         <a href="javascript:cerrar()"><i class="fas fa-hand-spock"></i><br>Cerrar</a>
+      </div>
+      <div class="text-vent">
+          <p class="subtitle">Materias Optativas</p>
+          Las asignaturas optativas cursadas normalmente en el segundo semestre y en carrera son elegidas en acuerdo con el director de tesis, y tienen la función de fortalecer aspectos teóricos y metodológicos del problema de investigación, de tal manera que durante el tercer semestre los alumnos puedan dedicarse de forma intensiva al trabajo de campo y/o de laboratorio.
+      </div>
+  </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -714,6 +723,14 @@
         prevEl: ".swiper-button-prev",
       },
     });
+  </script>
+  <script>
+      function abrir(){
+          document.getElementById("vent").style.display="block";
+      } 
+      function cerrar(){
+          document.getElementById("vent").style.display="none";
+      }
   </script>
 </body>
 </html>

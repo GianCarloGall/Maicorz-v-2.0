@@ -1383,6 +1383,87 @@ iframe{
 .boton-prueba:hover{
   background: #234CBE;
 }
+.ventana{
+  display: none;
+  width: 75%;
+  height: 610px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99999;
+  background: var(--body-color);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.7s ease-in-out;
+  border: 2px solid var(--primary-color-light);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.ventana::-webkit-scrollbar{
+  width: 7px;
+  margin-right: 5px;
+  background: transparent;
+  scroll-behavior: smooth;
+}
+.ventana::-webkit-scrollbar-thumb{
+  background: var(--slider-color);
+  border-radius: 7px;
+}
+.vent{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99999;
+  background: var(--body-color);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.7s ease-in-out;
+  border: 2px solid var(--primary-color-light);
+  width: 50%;
+  height: 250px;
+}
+.cerrar{
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  right: 0;
+  left: 90%;
+  margin: auto;
+  text-align: center;
+  font-weight: 450;
+}
+.cerrar a{
+  color: var(--primary-color-light);
+}
+.text-vent{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 90%;
+  margin-left: 5%;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin: auto;
+  text-align: justify;
+  color: var(--text-color);
+}
+.terminos{
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+}
+.terminos a{
+  color: #1b3b91;
+  font-size: 13px;
+}
 /*_______________________________________________________________________*/
 /*RESPONSIVE  :v*/
 @media (max-width: 900px) {
