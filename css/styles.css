@@ -1394,7 +1394,7 @@ iframe{
   left: 0;
   margin: auto;
   z-index: 99999;
-  background: var(--body-color);
+  background: var(--sidebar-color);
   box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.7s ease-in-out;
   border: 2px solid var(--primary-color-light);
@@ -1408,6 +1408,34 @@ iframe{
   scroll-behavior: smooth;
 }
 .ventana::-webkit-scrollbar-thumb{
+  background: var(--slider-color);
+  border-radius: 7px;
+}
+.vent2{
+  display: none;
+  width: 50%;
+  height: 610px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99999;
+  background: var(--sidebar-color);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.7s ease-in-out;
+  border: 2px solid var(--primary-color-light);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.vent2::-webkit-scrollbar{
+  width: 7px;
+  margin-right: 5px;
+  background: transparent;
+  scroll-behavior: smooth;
+}
+.vent2::-webkit-scrollbar-thumb{
   background: var(--slider-color);
   border-radius: 7px;
 }
@@ -1455,7 +1483,6 @@ iframe{
   color: var(--text-color);
 }
 .terminos{
-  text-decoration: underline;
   text-align: center;
   cursor: pointer;
   margin: 5px;
@@ -1463,6 +1490,21 @@ iframe{
 .terminos a{
   color: #1b3b91;
   font-size: 13px;
+  font-weight: 400;
+}
+.terminos a:hover{
+  text-decoration: underline;
+}
+.card-vent{
+  position: absolute;
+  display: inline-block;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 40px;
 }
 /*_______________________________________________________________________*/
 /*RESPONSIVE  :v*/
