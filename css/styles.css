@@ -1352,7 +1352,7 @@ iframe{
 .prueba .radio{
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 30%;
+  margin-left: 35%;
 }
 .respuestas{
   margin-left: 10px;
@@ -1362,7 +1362,7 @@ iframe{
 }
 .boton-prueba{
   width: 16%;
-  margin: 10px;
+  margin: 30px;
   margin-left: 42%;
   padding: 15px;
   color: white;
