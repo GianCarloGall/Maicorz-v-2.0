@@ -1234,7 +1234,7 @@ iframe{
   scroll-behavior: smooth;
 }
 .chat ul::-webkit-scrollbar-thumb{
-  background: var(--primary-color);
+  background: var(--primary-color-light);
   border-radius: 7px;
 }
 #user{
@@ -1280,7 +1280,7 @@ iframe{
   left: 0;
   right: 0;
   margin: auto;
-  width: 50%;
+  width: 30%;
 }
 .image-perfil{
   position: absolute;
