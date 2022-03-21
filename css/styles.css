@@ -591,10 +591,11 @@ section .card .image img{
   text-align: justify;
 }
 .image-left{
+  display: inline-block;
   position: absolute;
-  width: 40%;
-  margin-left: 55%;
-  margin-top: -33%;
+  width: 70%;
+  margin-left: 105%;
+  margin-top: -57%;
 }
 .image-left-2{
   position: absolute;
@@ -626,6 +627,7 @@ section .card .image img{
 }
 li .bullet-point{
   text-indent: -5;
+  margin-left: 15px;
 }
 ul{
   list-style: none;
@@ -1209,7 +1211,7 @@ iframe{
 }
 .chat{
   width: 70%;
-  height: 80%;
+  height: 550px;
   margin-left: 15%;
   padding: 30px;
   border-radius: 30px;
@@ -1302,7 +1304,7 @@ iframe{
 }
 .perfil-card{
   width: 90%;
-  height: 75%;
+  height: 520px;
   padding: 30px;
   margin-left: 5%;
   margin-top: 3%;
@@ -1505,6 +1507,79 @@ iframe{
   width: 60%;
   margin-left: 20%;
   margin-bottom: 40px;
+}
+.table{
+  width: 40%;
+  margin-left: 30%;
+}
+.table td, .table th{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--slider-color);
+}
+.boton-modi{
+  background: #1b3b91;
+  padding: 5px;
+  margin-left: 65px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.boton-modi:hover{
+  background: #234CBE;
+}
+.formulario-exam{
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 50px;
+  padding: 10px;
+  background: var(--sidebar-color);
+  border-radius: 15px;
+}
+.formulario-exam input[type="text"]{
+  display: inline-block;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  border: 1px solid var(--slider-color);
+  border-radius: 3px;
+  padding: 7px;
+  background-color: var(--toggle-color);
+}
+.boton-submit{
+  border: none;
+  background: #1b3b91;
+  padding: 7px;
+  width: 30%;
+  margin-left: 35%;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.boton-submit:hover{
+  background: #234CBE;
+}
+.boton-submit2{
+  border: none;
+  background: #1b3b91;
+  padding: 7px;
+  width: 40%;
+  top: 15px;
+  bottom: 30px;
+  margin-left: 46%;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.boton-submit2:hover{
+  background: #234CBE;
+}
+.espacio-final{
+  padding: 50px;
 }
 /*_______________________________________________________________________*/
 /*RESPONSIVE  :v*/

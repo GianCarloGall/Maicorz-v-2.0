@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href= "images/icon.png">
+    <title>Administración | Maicorz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+          <div class="image-text">
+            <span class="image">
+              <img src="images/NoNeimDia.png" alt="" title="NoNeim">
+            </span>
+            <div class="text logo-text">
+              <span class="name">Maicorz</span>
+              <span class="profession">Administración</span>
+            </div>
+          </div>
+          <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+          <div class="menu">
+              <li class="search-box"></li>
+                <ul class="menu-links">
+                    <li class="nav-link" title="Usuarios">
+                        <a href="usuarios.html" target="Blank">
+                            <i class="fa-solid fa-user-gear icon"></i>
+                            <span class="text nav-text">Usuarios</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" title="Profesores">
+                        <a href="profesores.html" target="Blank">
+                            <i class="fa-solid fa-user-tie icon"></i>
+                            <span class="text nav-text">Profesores</span>
+                        </a>
+                    </li>
+              </ul>
+          </div>
+          <div class="bottom-content">
+            <li class="nav-link" title="Cerrar Sesión">
+                <a href="">
+                    <i class="fa-solid fa-right-from-bracket icon revez"></i>
+                    <span class="text nav-text">Cerrar Sesión</span>
+                </a>
+            </li>
+            <li class="mode">
+              <div class="sun-moon">
+                  <i class='bx bx-moon icon moon'></i>
+                  <i class='bx bx-sun icon sun'></i>
+              </div>
+              <span class="mode-text text">Modo Noche</span>
+              <div class="toggle-switch">
+                  <span class="switch"></span>
+              </div>
+            </li>
+          </div>
+        </div>
+    </nav>
+    <script>
+    const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+    })
+    searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+    })
+    modeSwitch.addEventListener("click" , () =>{
+        body.classList.toggle("dark");
+        
+        if(body.classList.contains("dark")){
+            modeText.innerText = "Modo Día";
+        }else{
+            modeText.innerText = "Modo Noche";
+            
+        }
+    });
+    </script>
+    <section class="home">
+        <div class="text1">Administración</div>
+        <p class="title-text">Examen</p>
+        <form action="" class="formulario-exam">
+            <p class="subtitle">Agregar Pregunta</p>
+            <input type="text" placeholder="Pregunta" required>
+            <p class="subtitle">Agregar Respuestas</p>
+            <input type="text" placeholder="A" required>
+            <input type="text" placeholder="B" required>
+            <input type="text" placeholder="C" required>
+            <input type="text" placeholder="D" required>
+            <input type="submit" class="boton-submit" value="Ok">
+        </form>
+        <a href="" class="boton-submit2">Ver Examen</a>
+        <p class="title-text">Cuestionario</p>
+        <table class="table">
+            <thead>
+                <th>Materia</th>
+                <th></th>
+            </thead>
+            <tr>
+                <td>Español</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>
+            </tr>
+            <tr>
+                <td>Matemática</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>             
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>
+            </tr>
+            <tr>
+                <td>Biología</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>
+            </tr>
+            <tr>  
+                <td>Química</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>
+            </tr>
+            <tr>
+                <td>Historia</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>
+            </tr>
+            <tr>
+                <td>Formación Cívica y Ética</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>
+            </tr>
+            <tr>
+                <td>Geografía</td>
+                <td><a href="" class="boton-modi">Modificar</a></td>
+            </tr>
+        </table>
+        <div class="espacio-final"></div>
+    </section>
+</body>
+</html>
