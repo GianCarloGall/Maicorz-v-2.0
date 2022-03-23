@@ -1746,6 +1746,17 @@ noscript img{
     z-index: 10000;
     background: var(--slider-color);
     color: #fff;
+  }    
+  .toggle-switch .switch{
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    width: 40px;
+    margin-right: calc(100%-250px);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    transition: var(--tran-05);
   }
   .boton{
     display: none;
