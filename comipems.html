@@ -11,8 +11,9 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="scroll"><i class="fa-solid fa-angle-down"></i></div>
-    <div class="navegacion">
+    <a href="javascript:ocultar()" class="scroll" id="scroll"><i class="fa-solid fa-angle-down"></i></a>
+    <a href="javascript:Nocultar()" class="scroll1" id="scroll1"><i class="fa-solid fa-angle-up"></i></a>
+    <div class="navegacion" id="navegacion">
         <ul class="navList">
             <li>
                 <a href="Escuelas.html">
@@ -33,6 +34,18 @@
             </div>
         </ul>
     </div>
+    <script>
+        function ocultar(){
+            document.getElementById("navegacion").style.display="none";
+            document.getElementById("scroll").style.display="none";
+            document.getElementById("scroll1").style.display="block";
+        } 
+        function Nocultar(){
+            document.getElementById("navegacion").style.display="block";
+            document.getElementById("scroll").style.display="block";
+            document.getElementById("scroll1").style.display="none";
+        } 
+    </script>
     <nav class="sidebar close">
         <header>
           <div class="image-text">

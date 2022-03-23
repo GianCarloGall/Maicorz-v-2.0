@@ -1747,6 +1747,20 @@ noscript img{
     background: var(--slider-color);
     color: #fff;
   }
+  .scroll1{
+    display: none;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 50%;
+    top: 89%;
+    left: 90%;
+    z-index: 10000;
+    background: var(--slider-color);
+    color: #fff;
+  }
   .bottom-content{
     display: inline-block;
   }    
