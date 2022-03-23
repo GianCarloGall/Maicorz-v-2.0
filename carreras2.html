@@ -12,6 +12,52 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <a href="javascript:ocultar()" class="scroll" id="scroll"><i class="fa-solid fa-angle-down"></i></a>
+    <a href="javascript:Nocultar()" class="scroll1" id="scroll1"><i class="fa-solid fa-angle-up"></i></a>
+    <div class="navegacion" id="navegacion">
+        <ul class="navList">
+            <li>
+                <a href="comipems.html">
+                    <i class="fa-solid fa-newspaper"></i><p> COMIPEMS</p>
+                </a>
+            </li>
+            <li>
+                <a href="Escuelas.html">
+                    <i class="fa-solid fa-school"></i><p> Escuelas</p>
+                </a>
+            </li>
+            <li>
+                <a href="Cecyts.html">
+                    <i class="fa-solid fa-chalkboard-user"></i><p> Cecyts</p>
+                </a>
+            </li>
+            <li>
+                <a href="carreras.html">
+                    
+                    <i class="fa-solid fa-chevron-left icon"></i><p> Anterior</p>
+                </a>
+            </li>
+            <div class="bottom-content">
+                <li class="mode">
+                  <div class="toggle-switch">
+                      <span class="switch"></span>
+                  </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <script>
+        function ocultar(){
+            document.getElementById("navegacion").style.display="none";
+            document.getElementById("scroll").style.display="none";
+            document.getElementById("scroll1").style.display="block";
+        } 
+        function Nocultar(){
+            document.getElementById("navegacion").style.display="block";
+            document.getElementById("scroll").style.display="block";
+            document.getElementById("scroll1").style.display="none";
+        } 
+    </script>
     <nav class="sidebar close">
         <header>
           <div class="image-text">

@@ -1829,4 +1829,29 @@ noscript img{
   #segunda_imagen{
     display: none;
   }
+  .article{
+    position: relative;
+    color: var(--text-color);
+    width: 86%;
+    margin-left: 7%;
+    text-align: justify;
+  }
+  .lista{
+    display: block;
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .lista__imagen{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #lista__imagen{
+      width: 26%;
+      margin-top: 20px;
+      margin-left: 37%;
+  }
 }
