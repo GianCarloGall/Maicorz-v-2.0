@@ -212,6 +212,9 @@ section{
 .container #flip{
   display: none;
 }
+.radio{
+  margin: 15px;
+}
 input[type="radio"]{
   display: none;
 }
