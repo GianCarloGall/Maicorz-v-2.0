@@ -1796,4 +1796,37 @@ noscript img{
   #noocultar{
     display: block;
   }
+  .derecha{
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    margin-top: 20%;
+  }
+  .izquierda{
+    width: 30%;
+    margin-left: 10%;
+    display: block;
+    position: relative;
+    margin-top: 20%;
+  }
+  .derecha2{
+    width: 30%;
+    display: block;
+    position: relative;
+    margin-top: 20%;
+  }
+  .izquierda2{
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    margin-top: 20%;
+  }
+  .images{
+    display: block;
+    width: 220%;
+    margin-left: 30%;
+  }
+  #segunda_imagen{
+    display: none;
+  }
 }
