@@ -1613,6 +1613,9 @@ noscript img{
   margin: auto;
   opacity: 0.2;
 }
+.scroll{
+  display: none;
+}
 .navegacion{
   display: none;
 }
@@ -1709,6 +1712,7 @@ noscript img{
   .navegacion{
     display: block;
     position: fixed;
+    align-items: center;
     width: 110%;
     margin-left: -10%;
     height: 75px;
@@ -1718,21 +1722,9 @@ noscript img{
     overflow-y: scroll;
     background: var(--sidebar-color);
   }
-  .scroll{
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    border-radius: 50%;
-    background: var(--slider-color);
-    color: var(--primary-color-light);
-    top: calc(100%-35px);
-    height: calc(100%-35px);
-    z-index: 99999;
-
-  }
   .navegacion ul li{
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 25px;
     color: black;
     text-align: center;
     padding: 10px;
@@ -1740,6 +1732,20 @@ noscript img{
   }
   .navegacion ul li a{
     color: var(--primary-color);
+  }
+  .scroll{
+    display: block;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 50%;
+    top: 89%;
+    left: 90%;
+    z-index: 10000;
+    background: var(--slider-color);
+    color: #fff;
   }
   .boton{
     display: none;
