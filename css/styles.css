@@ -1616,6 +1616,9 @@ noscript img{
 .navegacion{
   display: none;
 }
+#noocultar{
+  display: none;
+}
 /*_______________________________________________________________________*/
 /*RESPONSIVE  :v*/
 @media (max-width: 750px) {
@@ -1689,6 +1692,9 @@ noscript img{
   #inicio{
     margin-bottom: 225px;
   }
+  .margen-top-titulo{
+    padding-top: 0px;
+  }
   .sidebar.close ~ .home{
     left: 0;
     width: 100%;
@@ -1703,11 +1709,43 @@ noscript img{
   .navegacion{
     display: block;
     position: fixed;
-    width: 110%;
+    width: 150%;
     margin-left: -10%;
     height: 75px;
     top: calc(100% - 75px);
     z-index: 9999;
+    overflow-x: scroll;
     background: var(--sidebar-color);
+  }
+  .navegacion ul li{
+    display: inline-block;
+    margin-left: 15px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .navegacion ul li a{
+    color: var(--primary-color);
+  }
+  .boton{
+    display: none;
+  }
+  .container{
+    width: 96%;
+    height: calc(100% - 15%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-left: 2%;
+  }
+  #ocultar{
+    display: none;
+  }
+  #noocultar{
+    display: block;
   }
 }
