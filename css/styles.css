@@ -1746,14 +1746,18 @@ noscript img{
     z-index: 10000;
     background: var(--slider-color);
     color: #fff;
+  }
+  .bottom-content{
+    display: inline-block;
   }    
   .toggle-switch .switch{
     position: relative;
     display: inline-block;
     height: 22px;
     width: 40px;
-    margin-right: calc(100%-250px);
+    margin-right: 35px;
     padding: 10px;
+    bottom: 10px;
     border-radius: 25px;
     background-color: var(--primary-color);
     transition: var(--tran-05);
