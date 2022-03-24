@@ -1919,8 +1919,37 @@ noscript img{
     left: 85%;
     font-size: 20px;
   }
-  /*---------------------*/
-  .swiper-wrapper , .content, .card, .swiper{
+  .ocultar{
     display: none;
+  }
+  /*---------------------*/
+  #container-background{
+    display: none;
+  }
+  .chat{
+    width: 90%;
+    height: 450px;
+    margin-top: 10%;
+    margin-left: 5%;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  .chat ul{
+    height: 300px;
+  }
+  #user{
+    background: none;
+    border: none;
+    color: var(--primary-color);
+  }
+  .chat-escribir{
+    width: 70%;
+  }
+  .chat button{
+    width: 40px;
+    height: 25px;
+  }
+  .chat-image{
+    width: 70%;
   }
 }
