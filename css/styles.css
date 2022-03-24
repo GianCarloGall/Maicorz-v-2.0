@@ -1715,8 +1715,8 @@ noscript img{
     align-items: center;
     width: 110%;
     margin-left: -10%;
-    height: 75px;
-    top: calc(100% - 75px);
+    height: 60px;
+    top: calc(100% - 60px);
     z-index: 9999;
     overflow: hidden;
     overflow-y: scroll;
@@ -1724,11 +1724,11 @@ noscript img{
   }
   .navegacion ul li{
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 15px;
     color: black;
     text-align: center;
     padding: 10px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .navegacion ul li a{
     color: var(--primary-color);
@@ -1839,8 +1839,7 @@ noscript img{
   .lista{
     display: block;
     text-align: left;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -1899,5 +1898,29 @@ noscript img{
     margin-left: 5%;
     margin-bottom: 25px;
     margin-top: 25PX;
+  }
+  .sidebar.close ~ .home{
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+  }
+  .sidebar{
+    display: none;
+  }
+  .sidebar .close{
+    width: 0px;
+  }
+  .vent{
+    width: 95%;
+    height: 300px;
+  }
+  .cerrar{
+    top: 5px;
+    left: 85%;
+    font-size: 20px;
+  }
+  /*---------------------*/
+  .swiper-wrapper , .content, .card, .swiper{
+    display: none;
   }
 }

@@ -11,51 +11,6 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <a href="javascript:ocultar()" class="scroll" id="scroll"><i class="fa-solid fa-angle-down"></i></a>
-    <a href="javascript:Nocultar()" class="scroll1" id="scroll1"><i class="fa-solid fa-angle-up"></i></a>
-    <div class="navegacion" id="navegacion">
-        <ul class="navList">
-            <li>
-                <a href="comipems.html">
-                    <i class="fa-solid fa-newspaper"></i><p> COMIPEMS</p>
-                </a>
-            </li>
-            <li>
-                <a href="Escuelas.html">
-                    <i class="fa-solid fa-school"></i><p> Escuelas</p>
-                </a>
-            </li>
-            <li>
-                <a href="Cuenta.html">
-                    <i class="fa-solid fa-user-plus"></i><p> Registrase</p>
-                </a>
-            </li>
-            <li>
-                <a href="Cuenta.html">
-                    <i class="fa-solid fa-user-astronaut icon"></i><p> Iniciar Sesión</p>
-                </a>
-            </li>
-            <div class="bottom-content">
-                <li class="mode">
-                  <div class="toggle-switch">
-                      <span class="switch"></span>
-                  </div>
-                </li>
-            </div>
-        </ul>
-    </div>
-    <script>
-        function ocultar(){
-            document.getElementById("navegacion").style.display="none";
-            document.getElementById("scroll").style.display="none";
-            document.getElementById("scroll1").style.display="block";
-        } 
-        function Nocultar(){
-            document.getElementById("navegacion").style.display="block";
-            document.getElementById("scroll").style.display="block";
-            document.getElementById("scroll1").style.display="none";
-        } 
-    </script>
     <nav class="sidebar close">
         <header>
           <div class="image-text">
@@ -113,29 +68,67 @@
           </div>
         </div>
     </nav>
+    <a href="javascript:ocultar()" class="scroll" id="scroll"><i class="fa-solid fa-angle-down"></i></a>
+    <a href="javascript:Nocultar()" class="scroll1" id="scroll1"><i class="fa-solid fa-angle-up"></i></a>
+    <div class="navegacion" id="navegacion">
+        <ul class="navList">
+            <li>
+                <a href="comipems.html">
+                    <i class="fa-solid fa-newspaper"></i><p> COMIPEMS</p>
+                </a>
+            </li>
+            <li>
+                <a href="Escuelas.html">
+                    <i class="fa-solid fa-school"></i><p> Escuelas</p>
+                </a>
+            </li>
+            <li>
+                <a href="Cuenta.html">
+                    <i class="fa-solid fa-user-plus"></i><p> Registrase</p>
+                </a>
+            </li>
+            <li>
+                <a href="Cuenta.html">
+                    <i class="fa-solid fa-user-astronaut icon"></i><p> Iniciar Sesión</p>
+                </a>
+            </li>
+        </ul>
+    </div>
     <script>
-    const body = document.querySelector('body'),
-    sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle"),
-    searchBtn = body.querySelector(".search-box"),
-    modeSwitch = body.querySelector(".toggle-switch"),
-    modeText = body.querySelector(".mode-text");
-    toggle.addEventListener("click" , () =>{
-        sidebar.classList.toggle("close");
-    })
-    searchBtn.addEventListener("click" , () =>{
-        sidebar.classList.remove("close");
-    })
-    modeSwitch.addEventListener("click" , () =>{
-        body.classList.toggle("dark");
-        
-        if(body.classList.contains("dark")){
-            modeText.innerText = "Modo Día";
-        }else{
-            modeText.innerText = "Modo Noche";
+        function ocultar(){
+            document.getElementById("navegacion").style.display="none";
+            document.getElementById("scroll").style.display="none";
+            document.getElementById("scroll1").style.display="block";
+        } 
+        function Nocultar(){
+            document.getElementById("navegacion").style.display="block";
+            document.getElementById("scroll").style.display="block";
+            document.getElementById("scroll1").style.display="none";
+        } 
+    </script>
+    <script>
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+        toggle.addEventListener("click" , () =>{
+            sidebar.classList.toggle("close");
+        })
+        searchBtn.addEventListener("click" , () =>{
+            sidebar.classList.remove("close");
+        })
+        modeSwitch.addEventListener("click" , () =>{
+            body.classList.toggle("dark");
             
-        }
-    });
+            if(body.classList.contains("dark")){
+                modeText.innerText = "Modo Día";
+            }else{
+                modeText.innerText = "Modo Noche";
+                
+            }
+        });
     </script>
     <section class="home">
         <div class="text1">Inicio </div>
@@ -154,26 +147,26 @@
         <hr>
         <article clas="home">
             <div class="article-right" id="inicio">
-            <p class="title-text">Instituto Politécnico Nacional</p>
-            <p>
-                El IPN fue fundado en 1936.
-                <br>
-                Su lema <b>"La técnica al servicio de la Patria"</b>, reflejan su misión y visión. Se busca que el conocimiento y formación que se brinda contribuya al desarrollo científico, tecnológico y de innovación dentro del país.
-                <br>
-                Se ofrecen bachilleratos tecnológicos con duración de 6 semestres.
-                <br><br>
-                Bajo 2 tipos de modalidades:
-                <br>
-                <ul>
-                <br>
-                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Centro de Estudios Científicos y Tecnológicos (CECyT).</li>
-                <br>
-                <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Centro de Estudios Tecnológicos (CET).</li>
-                </ul>
-                <br>
-                La ventaja de este tipo de bachilleratos es que es bivalente y al finalizar obtienes un certificado o título técnico junto con una cédula profesional válidos por la SEP; lo cual permite integrarte al campo laboral.
-            </p>            
-            <img class="image-left" src="images/ipn.png" alt="Instituto Politécnico Nacional" title="IPN">
+                <p class="title-text">Instituto Politécnico Nacional</p>
+                <p>
+                    El IPN fue fundado en 1936.
+                    <br>
+                    Su lema <b>"La técnica al servicio de la Patria"</b>, reflejan su misión y visión. Se busca que el conocimiento y formación que se brinda contribuya al desarrollo científico, tecnológico y de innovación dentro del país.
+                    <br>
+                    Se ofrecen bachilleratos tecnológicos con duración de 6 semestres.
+                    <br><br>
+                    Bajo 2 tipos de modalidades:
+                    <br>
+                    <ul>
+                    <br>
+                    <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Centro de Estudios Científicos y Tecnológicos (CECyT).</li>
+                    <br>
+                    <li class="bullet-point"><i class="fa-solid fa-pencil"></i> Centro de Estudios Tecnológicos (CET).</li>
+                    </ul>
+                    <br>
+                    La ventaja de este tipo de bachilleratos es que es bivalente y al finalizar obtienes un certificado o título técnico junto con una cédula profesional válidos por la SEP; lo cual permite integrarte al campo laboral.
+                </p>            
+                <img class="image-left" src="images/ipn.png" alt="Instituto Politécnico Nacional" title="IPN">
             </div>
             <hr>
             <div class="article">
@@ -213,6 +206,7 @@
                 </div>
             </div>
         </article>
+        <div class="espacio-final"></div>
     </section>
 </body>
 <noscript>

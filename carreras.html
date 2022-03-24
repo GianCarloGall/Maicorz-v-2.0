@@ -36,27 +36,8 @@
                     <i class="fa-solid fa-chevron-right"></i><p> Siguiente</p>
                 </a>
             </li>
-            <div class="bottom-content">
-                <li class="mode">
-                  <div class="toggle-switch">
-                      <span class="switch"></span>
-                  </div>
-                </li>
-            </div>
         </ul>
     </div>
-    <script>
-        function ocultar(){
-            document.getElementById("navegacion").style.display="none";
-            document.getElementById("scroll").style.display="none";
-            document.getElementById("scroll1").style.display="block";
-        } 
-        function Nocultar(){
-            document.getElementById("navegacion").style.display="block";
-            document.getElementById("scroll").style.display="block";
-            document.getElementById("scroll1").style.display="none";
-        } 
-    </script>
     <nav class="sidebar close">
         <header>
           <div class="image-text">
@@ -114,6 +95,18 @@
           </div>
         </div>
     </nav>
+    <script>
+        function ocultar(){
+            document.getElementById("navegacion").style.display="none";
+            document.getElementById("scroll").style.display="none";
+            document.getElementById("scroll1").style.display="block";
+        } 
+        function Nocultar(){
+            document.getElementById("navegacion").style.display="block";
+            document.getElementById("scroll").style.display="block";
+            document.getElementById("scroll1").style.display="none";
+        } 
+    </script>
     <script>
     const body = document.querySelector('body'),
     sidebar = body.querySelector('nav'),
@@ -1656,7 +1649,7 @@
     </section>
     <div class="ventana vent" id="vent">
         <div class="cerrar">
-           <a href="javascript:cerrar()"><i class="fas fa-hand-spock"></i><br>Cerrar</a>
+           <a href="javascript:cerrar()"><i class="fas fa-hand-spock"></i></a>
         </div>
         <div class="text-vent">
             <p class="subtitle">Materias Optativas</p>
